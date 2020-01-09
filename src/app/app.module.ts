@@ -19,6 +19,8 @@ import { RegisterComponent } from './login/register.component';
 
 import { PagesModule } from './pages/pages.module';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +36,7 @@ import { PagesModule } from './pages/pages.module';
     RegisterComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     PagesModule,
     AppRoutingModule //siempre al final
