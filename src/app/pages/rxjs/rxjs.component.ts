@@ -66,7 +66,7 @@ export class RxjsComponent implements OnInit,OnDestroy {
 
   regresaObservable():Observable<any>{
 
-    return new Observable((observer:Subscriber<any>)=>{
+    return new Observable(observer=>{
       let contador=0;
       let intervalo= setInterval(()=>{
 
@@ -92,7 +92,9 @@ export class RxjsComponent implements OnInit,OnDestroy {
         /*map(resp => {
           return resp.valor+1;
         })*/
-        map(resp=> resp.valor),
+        map((resp: any)=>{
+            return resp.valor;
+        }),
         filter((valor,index)=>{
           //console.log('filter',valor,index);
           if((valor % 2)===1){
