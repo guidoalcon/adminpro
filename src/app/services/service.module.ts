@@ -6,7 +6,8 @@ import {
   SettingsService,
   SidebarService,
   SharedService,
-  UsuarioService
+  UsuarioService,
+  SubirArchivoService
 } from './service.index';
 import { LoginGuardGuard } from './guards/login-guard.guard';
 
@@ -18,6 +19,7 @@ import { LoginGuardGuard } from './guards/login-guard.guard';
     HttpClientModule
   ],
   providers:[
+    SubirArchivoService,
     SettingsService,
     SidebarService,
     SharedService,
