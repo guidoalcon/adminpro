@@ -21,6 +21,7 @@ import { PagesModule } from './pages/pages.module';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceModule } from './services/service.module';
+
 //import { ImagenPipe } from './pipes/imagen.pipe';
 
 @NgModule({
@@ -35,7 +36,7 @@ import { ServiceModule } from './services/service.module';
     //SidebarComponent,
     //BreadcrumbsComponent,
     //PagesComponent,
-    RegisterComponent//,
+    RegisterComponent
     //ImagenPipe
   ],
   imports: [

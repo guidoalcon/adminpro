@@ -10,6 +10,7 @@ import {
   SubirArchivoService
 } from './service.index';
 import { LoginGuardGuard } from './guards/login-guard.guard';
+import { ModalUploadService } from '../components/modal-upload/modal-upload.service';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { LoginGuardGuard } from './guards/login-guard.guard';
     SidebarService,
     SharedService,
     UsuarioService,
-    LoginGuardGuard
+    LoginGuardGuard,
+    ModalUploadService
   ]
 })
 export class ServiceModule { }
