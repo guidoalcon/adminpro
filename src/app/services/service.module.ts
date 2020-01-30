@@ -10,6 +10,7 @@ import {
   HospitalService,
   MedicoService,
   AdminGuard,
+  VerificaTokenGuard,
   SubirArchivoService
 } from './service.index';
 import { LoginGuardGuard } from './guards/login-guard.guard';
@@ -31,6 +32,7 @@ import { ModalUploadService } from '../components/modal-upload/modal-upload.serv
     HospitalService,
     MedicoService,
     LoginGuardGuard,
+    VerificaTokenGuard,
     ModalUploadService,
     AdminGuard
   ]

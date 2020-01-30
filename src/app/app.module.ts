@@ -21,6 +21,8 @@ import { PagesModule } from './pages/pages.module';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceModule } from './services/service.module';
+import { PagesComponent } from './pages/pages.component';
+import { SharedModule } from './shared/shared.module';
 
 //import { ImagenPipe } from './pipes/imagen.pipe';
 
@@ -36,14 +38,17 @@ import { ServiceModule } from './services/service.module';
     //SidebarComponent,
     //BreadcrumbsComponent,
     //PagesComponent,
-    RegisterComponent
+    RegisterComponent,
+    PagesComponent
     //ImagenPipe
   ],
   imports: [
+    SharedModule,
+
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,
-    PagesModule,
+    //PagesModule,
     ServiceModule,
     AppRoutingModule //siempre al final
   ],
